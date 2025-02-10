@@ -12,34 +12,87 @@ body {
 .container {
   width: 100%;
   max-width: 1050px;
-  height: 650px;
+  height: 500px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: center;
   background-color: aliceblue;
-  margin: 0 auto;
 }
 
 .cards {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px; /* Adiciona padding para espaçamento interno */
+  justify-content: space-between;
+  align-items: start;
+  padding:50px; /* Adiciona padding para espaçamento interno */
   color: white; /* Define a cor do texto */
-  text-align: center; /* Centraliza o texto */
   height: 100%; /* Garante que os cartões ocupem a altura total do contêiner */
+}
+
+.cards h1{
+  font-family: "Big Shoulders Display", serif;
+  font-weight: 700;
+}
+
+.cards p{
+  font-family: "Lexend Deca", serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.cards button{
+  background-color: hsl(0, 0%, 95%);
+  width: 140px;
+  height: 45px;
+  border-radius: 40px;
+  text-align: center;
+  font-family: "Lexend Deca", serif;
+  font-size: 15px;
+  border: 0;
+  cursor: pointer;
 }
 
 #sedans{
   background-color: hsl(31, 77%, 52%);
 }
 
+#sedans button{
+  color: hsl(31, 77%, 52%);
+}
+
+#sedans button:hover{
+  background-color: hsl(31, 81%, 61%);
+  color: hsl(0, 0%, 95%);
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+
 #suvs{
   background-color: hsl(184, 100%, 22%);
 }
 
+#suvs button{
+  color: hsl(184, 100%, 22%);
+}
+
+#suvs button:hover{
+  background-color: hsla(184, 82%, 22%, 0.767);
+  color: hsl(0, 0%, 95%);
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+
 #luxury{
   background-color: hsl(179, 100%, 13%);
+}
+
+#luxury button{
+  color: hsl(179, 100%, 13%);
+}
+
+#luxury button:hover{
+  background-color: hsla(179, 91%, 13%, 0.733);
+  color: hsl(0, 0%, 95%);
+  transform: translateY(-5px);
+  transition: 0.5s;
 }
