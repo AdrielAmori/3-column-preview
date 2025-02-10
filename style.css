@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1050px;
+  height: 650px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Adiciona padding para espaçamento interno */
+  color: white; /* Define a cor do texto */
+  text-align: center; /* Centraliza o texto */
+  height: 100%; /* Garante que os cartões ocupem a altura total do contêiner */
+}
+
+#sedans{
+  background-color: hsl(31, 77%, 52%);
+}
+
+#suvs{
+  background-color: hsl(184, 100%, 22%);
+}
+
+#luxury{
+  background-color: hsl(179, 100%, 13%);
+}
