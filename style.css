@@ -96,3 +96,28 @@ body {
   transform: translateY(-5px);
   transition: 0.5s;
 }
+
+
+@media (max-width:375px){
+  .container{
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .cards{
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 375px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    height: 500px;
+  }
+
+  .cards {
+    height: 100%;
+    margin-bottom: 0;
+  }
+}
